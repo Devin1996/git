@@ -1,0 +1,141 @@
+UBUNTU 16.04 install -> apt-get install git-core 
+
+Check version -> $ git --version
+
+create an html file -> $ touch index.html 
+
+Intialize -> $ git init
+
+Configuration -> $ git config --global user.name 'Devin1996'
+		 $ git config --global user.email 'devinchandula@gmail.com'
+
+Add html ile -> $ git add index.html
+
+Add every files in html format -> $ git add *.html - 
+
+Add every files in any format -> $ git add .
+
+Check the statement -> $ git status
+
+remove index.html cached file -> $ git rm --cached index.html - 
+
+# change Somthing in a file(ex :index.html) and check status($ git status) and commit
+
+Commit -> $ git commit
+
+Enter for insert mode -> i 
+
+type a commit (ex:"initial mode")
+
+exit from insert mode -> Esc  
+
+exit from commit shell -> : wq
+
+After making changes to js file -> $ git add . 
+
+Inline Commit -> $ git commit -m 'changed app.js'
+
+clear the shell -> $ clear
+
+keep something you don't want separeate -> $ touch .gitignore
+
+Created file you dont want -> $ touch log.txt ------> "Error logs"
+
+Now move this file to .gitignore -> 'log.txt' ------> .gitignore 
+
+Now chech if log.txt is visible -> $ git add .
+				   
+				   $ git status
+
+				   So it will be not available because we have moved log.txt to .gitignore file
+
+Now create 2 new folders and two new js files as one in each folder -> dir1 ------> app1.js
+									
+								       dir2 ------> app2.js
+
+				   Now move dir2 folder to .gitignore -> /dir2 ------> .gitignore
+				   
+				   Now chech if dir2 is visible -> $ git add .
+				   
+				   				   $ git status
+
+				   So it will be not available because we have moved /dir2 to .gitignore file
+
+If you type *.txt in .gitignore file all .txt files will be unavailable
+
+
+ Working with branches
+........................
+
+Create branch login -> $ git branch login
+
+Check status -> $ git status
+
+Inline commit -> $ git commit -m 'Another Change'
+
+$ git checkout login -> swap to login 
+
+$ touch login.html
+
+index.html -> <p>login form</p>
+
+$ git commit -m 'login form'
+
+
+$ git checkout master -> swap to masrter
+
+u can see that login and part we added to index html will be dissapear
+
+$ git merge login -> merge master and login
+
+i
+
+give a commit with a reason "added login to the site"
+
+:wq
+
+
+.........
+remote repository
+.........
+
+new repository 'myappsample'
+
+
+Description  Sample app
+
+create git hub repository
+
+Now in bash
+
+$ git remote -> nothing shows
+
+paste this from git hub
+
+git remote add origin https://github.com/Devin1996/myappsample.git
+
+$ git remote rm origin
+
+$git remote 
+
+$git push -u origin master
+
+#now it comes login window
+#now reload the github page
+
+$ touch README.md
+
+				#app
+				sample
+
+$ git add .
+
+
+
+
+
+
+
+
+
+
